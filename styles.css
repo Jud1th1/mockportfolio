@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Dosis", serif;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+#navbar{
+    top:0;
+    position: fixed;
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    z-index: 1;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+#nav-img{
+    height: 40px;
+}
+
+#navbar > ul{
+    display: flex;
+    list-style: none;
+}
+
+#navbar > ul > li{
+    padding: 0px 14px;
+}
+
+/*************************** Welcome Section***************************/
+#welcome-section{
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    padding: 10%;
+    gap: 20px;
+}
+
+#profilepic{
+    border-radius: 50%;
+    max-height: 500px;
+}
+
+h1 {
+    font-size: 50px;
+    padding: 10px 0;
+    line-height: 50px;
+}
+
+
+/*************************** Skills Section***************************/
+#skills, #services{
+    padding: 50px;
+}
+
+h2{
+    padding: 20px 0;
+}
+
+.underline{
+    width: 75px;
+    border: 5px solid green;
+    box-shadow: 5px 5px 2px lightblue;
+    border-radius: 5px;
+}
+
+#skills> ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    text-align: center;
+}
+
+.skills> li{
+    list-style-type: none;
+}
+
+.skills> .icons {
+    background-color: blueviolet;
+    border-radius: 50%;
+    border: 1px solid green;
+    margin: 20px;
+    height: 100px;
+    padding: 15px;
+}
