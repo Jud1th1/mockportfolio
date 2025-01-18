@@ -57,9 +57,7 @@ h1 {
     line-height: 50px;
 }
 
-
-/*************************** Skills Section***************************/
-#skills, #services{
+#skills, #projects, #contact{
     padding: 50px;
 }
 
@@ -74,6 +72,7 @@ h2{
     border-radius: 5px;
 }
 
+/*************************** Skills Section***************************/
 #skills> ul{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -92,4 +91,16 @@ h2{
     margin: 20px;
     height: 100px;
     padding: 15px;
+}
+
+/*************************** Projects Section***************************/
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 30px;
+}
+
+.project-picture{
+    width: 400px;
 }
