@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 body{
     font-family: "Dosis", serif;
     font-size: 20px;
@@ -127,6 +132,11 @@ h2{
     width: 400px;
 }
 
+.project-tile:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
 .linkicons{
     color: #6247aa;
     text-decoration: underline;
@@ -138,7 +148,8 @@ h2{
     color: #a06cd5;
     text-decoration: none;
     text-shadow: 0 0 5px #9ba9ff;
-    font-size: larger;
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
 }
 
 /*************************** Projects Section***************************/
@@ -161,4 +172,23 @@ h2{
     font-size: 25px;
 }
 
+.contact-container i:hover {
+    color: #a06cd5;
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
+}
+
+footer{
+    text-align: center;
+    margin: 30px;
+}
+
 /*************************** Mobile Styling ***************************/
+@media (max-width: 768px) {
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+    #skills > ul {
+        grid-template-columns: 1fr;
+    }
+}
