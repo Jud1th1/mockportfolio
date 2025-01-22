@@ -140,3 +140,25 @@ h2{
     text-shadow: 0 0 5px #9ba9ff;
     font-size: larger;
 }
+
+/*************************** Projects Section***************************/
+.about-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/*************************** Contacts Section *************************/
+#contact{
+    text-align: center;
+}
+
+.contact-container{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    padding: 20px;
+    font-size: 25px;
+}
+
+/*************************** Mobile Styling ***************************/
