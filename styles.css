@@ -8,6 +8,7 @@ body{
     font-family: "Dosis", serif;
     font-size: 20px;
     line-height: 30px;
+    color: #343a40;
 }
 
 
@@ -37,12 +38,27 @@ body{
     padding: 0px 14px;
 }
 
+
+#navbar > ul > li >a {
+    text-decoration: none;
+    color: #6247aa;
+    font-weight: bold;
+}
+
+#navbar > ul > li >a:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    color: #a06cd5;
+    text-shadow: 1px 1px #bdbaba;
+}
+
+
 /*************************** Welcome Section***************************/
 #welcome-section{
     padding-top: 80px;
     display: flex;
     align-items: center;
-    padding: 10%;
+    padding: 100px;
     gap: 20px;
 }
 
@@ -55,21 +71,25 @@ h1 {
     font-size: 50px;
     padding: 10px 0;
     line-height: 50px;
+    color:#6247aa;
 }
 
-#skills, #projects, #contact{
-    padding: 50px;
+#skills, #projects, #contact, #about{
+    margin: 50px;
+    padding: 0 50px;
 }
 
 h2{
     padding: 20px 0;
+    color: #102b3f;
 }
 
 .underline{
     width: 75px;
-    border: 5px solid green;
-    box-shadow: 5px 5px 2px lightblue;
+    border: 5px solid #6247aa;
+    box-shadow: 3px 3px 1px #a06cd5;
     border-radius: 5px;
+    margin-bottom: 15px;
 }
 
 /*************************** Skills Section***************************/
@@ -82,14 +102,15 @@ h2{
 
 .skills> li{
     list-style-type: none;
+    color: #4f518c;
 }
 
-.skills> .icons {
-    background-color: blueviolet;
+.icons {
+    background-color: #e2cfea;
     border-radius: 50%;
-    border: 1px solid green;
+    border: 1px solid #6247aa;
     margin: 20px;
-    height: 100px;
+    height: 80px;
     padding: 15px;
 }
 
@@ -98,9 +119,24 @@ h2{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    gap: 30px;
+    gap: 50px;
+    padding: 50px;
 }
 
 .project-picture{
     width: 400px;
+}
+
+.linkicons{
+    color: #6247aa;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    padding: 2px;
+}
+
+.linkicons:hover{
+    color: #a06cd5;
+    text-decoration: none;
+    text-shadow: 0 0 5px #9ba9ff;
+    font-size: larger;
 }
