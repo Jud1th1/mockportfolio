@@ -57,19 +57,24 @@ body{
     text-shadow: 1px 1px #bdbaba;
 }
 
-
 /*************************** Welcome Section***************************/
 #welcome-section{
-    padding-top: 80px;
     display: flex;
     align-items: center;
-    padding: 100px;
+    justify-content: center;
+    padding: 110px;
     gap: 20px;
+}
+
+#welcome-section div:first-child {
+    flex: 1; /* Let the text block naturally size itself */
+    max-width: 600px; /* Restrict the maximum width of the text */
 }
 
 #profilepic{
     border-radius: 50%;
-    max-height: 500px;
+    height: auto;
+    max-width: 400px; 
 }
 
 h1 {
@@ -81,7 +86,7 @@ h1 {
 
 #skills, #projects, #contact, #about{
     margin: 50px;
-    padding: 0 50px;
+    padding: 50px 100px;
 }
 
 h2{
@@ -89,9 +94,18 @@ h2{
     color: #102b3f;
 }
 
+.underline1{
+    width: 80%;
+    margin: 20px auto; /* Centers it horizontally */
+    border: 0; /* Removes the default border style */
+    height: 2px; /* Sets the height of the line */
+    background-color: #ccc; 
+}
+
+
 .underline{
-    width: 75px;
-    border: 5px solid #6247aa;
+    width: 90px;
+    border: 3px solid #6247aa;
     box-shadow: 3px 3px 1px #a06cd5;
     border-radius: 5px;
     margin-bottom: 15px;
@@ -113,23 +127,37 @@ h2{
 .icons {
     background-color: #e2cfea;
     border-radius: 50%;
-    border: 1px solid #6247aa;
+    border: 5px solid #6247aa;
     margin: 20px;
-    height: 80px;
+    height: 120px;
     padding: 15px;
 }
 
 /*************************** Projects Section***************************/
 .project-container{
     display: grid;
+    justify-content: center;
+    align-items: center;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
     gap: 50px;
     padding: 50px;
 }
 
+.project-tile{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    word-wrap: break-word; 
+    padding: 20px;
+}
+
 .project-picture{
     width: 400px;
+    padding-bottom: 20px;
 }
 
 .project-tile:hover {
@@ -148,15 +176,24 @@ h2{
     color: #a06cd5;
     text-decoration: none;
     text-shadow: 0 0 5px #9ba9ff;
-    transform: scale(1.2);
+    transform: scale(1.5);
     transition: all 0.2s ease-in-out;
 }
 
-/*************************** Projects Section***************************/
+.linkicons:visited{
+    color: #343a40;
+}
+
+/*************************** About Section***************************/
 .about-container{
     display: flex;
     justify-content: center;
     gap: 20px;
+}
+
+.about-container img{
+    height: auto;
+    max-width: 400px; 
 }
 
 /*************************** Contacts Section *************************/
@@ -174,7 +211,7 @@ h2{
 
 .contact-container i:hover {
     color: #a06cd5;
-    transform: scale(1.2);
+    transform: scale(1.5);
     transition: all 0.2s ease-in-out;
 }
 
