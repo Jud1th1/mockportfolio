@@ -58,7 +58,7 @@ body{
     text-shadow: 1px 1px #bdbaba;
 }
 
-.menu-toggle {
+.toggleButton {
     display: none; /* Hidden by default */
     background: none;
     border: none;
@@ -79,6 +79,10 @@ body{
     gap: 20px;
     padding: 20px;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.side-bar.active {
+    left: 0;
 }
 
 #navbar > .side-bar{
@@ -253,12 +257,18 @@ footer{
         display: none;
     }
 
-    .menu-toggle {
+    .toggleButton {
         display: block; /* Show menu button */
     }
 
     .side-bar.show {
         display: flex; /* Show side bar when toggled */
+    }
+
+    .side-bar {
+        left: 0;
+        position: relative;
+        width: 250px;
     }
 
     #welcome-section{
