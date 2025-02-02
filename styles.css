@@ -16,7 +16,6 @@ body{
     color: #343a40;
 }
 
-
 #navbar{
     top:0;
     position: fixed;
@@ -104,6 +103,8 @@ body{
     border-radius: 50%;
     height: auto;
     max-width: 400px; 
+    transition: filter 0.3s ease-in-out;
+    filter: brightness(1.0) contrast(0.8);
 }
 
 h1 {
@@ -125,9 +126,9 @@ h2{
 
 .underline1{
     width: 80%;
-    margin: 20px auto; /* Centers it horizontally */
-    border: 0; /* Removes the default border style */
-    height: 2px; /* Sets the height of the line */
+    margin: 20px auto; 
+    border: 0;
+    height: 2px; 
     background-color: #ccc; 
 }
 
@@ -248,6 +249,58 @@ footer{
     text-align: center;
     margin: 30px;
 }
+
+
+/*************************** Dark Mode ***************************/
+.dark-mode {
+    background-color: #121212; 
+    color: #ffffff; 
+}
+
+.dark-mode #navbar {
+    background-color: #222;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.dark-mode #navbar > ul > li >a:hover{
+    text-underline-offset: 2px;
+    color: #c86bfa;
+    text-shadow: 1px 1px #6247aa;
+}
+
+.dark-mode .side-bar {
+    background-color: #222;
+}
+
+.dark-mode h2{
+    color: #a06cd5;
+}
+
+.dark-mode .underline{
+    border: 3px solid #cba9ecbb;
+    box-shadow: 3px 3px 1px #e2cfea;
+}
+
+.dark-mode .skills>li, .contact-container{
+    color: #a5a5a5;
+}
+
+.dark-mode .toggleButton, .closeButton {
+    color: #fff;
+}
+
+.dark-mode .fa-sun {
+    color: #f9dc5c;
+}
+
+.dark-mode #profilepic {
+    transition: filter 0.3s ease-in-out; /* Smooth transition */
+}
+
+.dark-mode #profilepic {
+    filter: brightness(0.8) contrast(1.0);
+}
+
 
 /*************************** Mobile Styling ***************************/
 @media (max-width: 768px) {
