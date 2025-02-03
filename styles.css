@@ -336,7 +336,9 @@ footer{
     filter: brightness(0.8) contrast(1.0);
 }
 
-
+.dark-mode .project-tile::before {
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.048), transparent); /* Subtle shimmer */
+}
 /*************************** Mobile Styling ***************************/
 @media (max-width: 768px) {
     #navbar > .nav-bar{
