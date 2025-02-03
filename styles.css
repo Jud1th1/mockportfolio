@@ -192,11 +192,33 @@ h2{
     height: auto;
     word-wrap: break-word; 
     padding: 20px;
+    position: relative;
+}
+
+.project-tile:hover .project-image {
+    transform: scale(1.05); /* Subtle zoom */
+}
+
+.project-tile::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -150%; /* Start further left for smoother effect */
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: transform 1.2s ease-in-out; /* Longer duration for smoothness */
+}
+
+.project-tile:hover::before {
+    transform: translateX(250%); /* Moves across smoothly */
 }
 
 .project-picture{
     width: 400px;
     padding-bottom: 20px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
 }
 
 .project-tile:hover {
