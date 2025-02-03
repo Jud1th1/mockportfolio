@@ -85,7 +85,7 @@ body{
     right: 0;
 }
 
-.closeButton, .fa-xmark {
+.closeButton{
     color: black;
     background: none;
     font-size: 24px;
@@ -270,6 +270,10 @@ h2{
     font-size: 25px;
 }
 
+.contact-container > a{
+    color: #c0b9dd;
+}
+
 .contact-container i:hover {
     color: #a06cd5;
     transform: scale(1.5);
@@ -316,16 +320,20 @@ footer{
     color: #a5a5a5;
 }
 
-.dark-mode .toggleButton {
+.dark-mode .toggleButton{
     color: #fff;
 }
 
-.dark-mode .fa-xmark {
+.dark-mode .closeButton{
     color: #fff;
 }
 
 .dark-mode .fa-sun {
-    color: #f9dc5c;
+    color: #f9dc5c; /* Sun icon color */
+}
+
+.dark-mode .fa-moon {
+    color: #f0f0f0; /* Moon icon color */
 }
 
 .dark-mode #profilepic {
@@ -339,6 +347,11 @@ footer{
 .dark-mode .project-tile::before {
     background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0), transparent); /* Subtle shimmer */
 }
+
+.dark-mode .contact-container > a{
+    color: #6247aa;
+}
+
 /*************************** Mobile Styling ***************************/
 @media (max-width: 768px) {
     #navbar > .nav-bar{
