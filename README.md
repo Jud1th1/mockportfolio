@@ -34,7 +34,7 @@ Features of the portfolio include:
 ### Links
 
 - Solution URL: [https://github.com/Jud1th1/mockportfolio] https://github.com/Jud1th1/mockportfolio
-- Live Site URL: []
+- Live Site URL: [https://judithsportfolio.netlify.app/] https://judithsportfolio.netlify.app/
 
 ## My process
 
