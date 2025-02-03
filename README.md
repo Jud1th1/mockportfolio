@@ -29,12 +29,12 @@ Features of the portfolio include:
 
 ### Screenshot
 
-![](./Content/BrewBox.png)
+![](./Content/portfolio.preview.png)
 
 ### Links
 
-- Solution URL: https://github.com/Jud1th1/Product_Landing_Page
-- Live Site URL: https://brewboxfcc.netlify.app/
+- Solution URL: [https://github.com/Jud1th1/mockportfolio] https://github.com/Jud1th1/mockportfolio
+- Live Site URL: []
 
 ## My process
 
