@@ -85,6 +85,15 @@ body{
     right: 0;
 }
 
+.closeButton, .fa-xmark {
+    color: black;
+    background: none;
+    font-size: 24px;
+    border: none; 
+    cursor: pointer;
+    z-index: 1000; 
+}
+
 /*************************** Welcome Section***************************/
 #welcome-section{
     display: flex;
@@ -285,7 +294,11 @@ footer{
     color: #a5a5a5;
 }
 
-.dark-mode .toggleButton, .closeButton {
+.dark-mode .toggleButton {
+    color: #fff;
+}
+
+.dark-mode .fa-xmark {
     color: #fff;
 }
 
