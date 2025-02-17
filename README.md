@@ -29,7 +29,7 @@ Features of the portfolio include:
 
 ### Screenshot
 
-![](./content/portfolio.preview.png)
+![](./screenshot.png)
 
 ### Links
 
